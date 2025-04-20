@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Google Form GPT Helper",
+    "version": "1.0",
+    "description": "Auto-answer Google Form questions using GPT.",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://docs.google.com/forms/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
